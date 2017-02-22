@@ -7,14 +7,25 @@
 	clear: both;
 }
 .row {
-    position:relative
+    position:relative;
 }
+
+.row .socialButtons{
+	position: absolute;
+}
+.socialButtons span{
+	border: 1px solid #575757; 
+	background: #F3F2F0; 
+	float: left;
+	padding: 5px 24px;
+}
+
 .row>div{
 	float: left;
-	margin-left: 13px;
-	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-bottom: 40px;
 	border: 1px solid black;
-	width: 250px;
+	width: 256px;
 }
 
 .row>div img{
@@ -22,23 +33,35 @@
 	height: 150px;
 }
 
+.row>div img:hover{
+	opacity: 0.7;
+	transition-duration: 0.7s;
+}
+
 .row h1 {
     text-align:center;
+    padding: 10px; 
 }
 
 .dateTime {
     position: absolute;
     top: 0;
     color: white;
+    width: 20%;
 }
 
-    .dateTime span:first-child {
+.dateTime span:first-child{
+	position: absolute;
+	top:0;
+	background: #2E9DA8;
+	width:50px;
+	padding:5px 10px;
+}    
 
-        background: blue;
-    }
-
-     .dateTime span:nth-child(2) {
-        position: absolute;
-        left: 0;
-        background: black;
-    }
+.dateTime span:nth-child(2){
+	position: absolute;	
+	top: 29px;
+	background:#3C4B60; 
+	width:50px;
+	padding:5px 10px;
+}
