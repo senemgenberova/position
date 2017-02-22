@@ -6,6 +6,9 @@
 .clear{
 	clear: both;
 }
+.row {
+    position:relative
+}
 .row>div{
 	float: left;
 	margin-left: 13px;
@@ -18,3 +21,24 @@
 	width: 100%;
 	height: 150px;
 }
+
+.row h1 {
+    text-align:center;
+}
+
+.dateTime {
+    position: absolute;
+    top: 0;
+    color: white;
+}
+
+    .dateTime span:first-child {
+
+        background: blue;
+    }
+
+     .dateTime span:nth-child(2) {
+        position: absolute;
+        left: 0;
+        background: black;
+    }
